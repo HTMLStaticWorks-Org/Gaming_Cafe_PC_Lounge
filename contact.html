@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Visit | REDLINE ARENA — Gaming Cafe &amp; PC Lounge</title>
+  <meta name="description" content="Get in touch with REDLINE ARENA, view venue details and hours, and submit a booking or tournament enquiry.">
+  <meta property="og:title" content="Contact REDLINE ARENA">
+  <meta property="og:description" content="Let's get you into the game. Venue location, operating hours, and enquiry form.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700&family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('redline_theme')||'dark');document.documentElement.setAttribute('dir',localStorage.getItem('redline_dir')||'ltr');}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-lockup" aria-label="REDLINE ARENA Home">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="games.html" class="nav-link">Games</a>
+        <a href="stations.html" class="nav-link">Stations</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="booking.html" class="nav-link">Book a Slot</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-cta">Login</a>
+        <button type="button" class="hamburger-btn" id="drawerOpenBtn" aria-label="Open navigation menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-lockup">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING LOUNGE</span>
+        </span>
+      </a>
+      <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Drawer Links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home-2.html" class="drawer-link">Home 2</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="games.html" class="drawer-link">Games</a>
+      <a href="stations.html" class="drawer-link">Stations</a>
+      <a href="pricing.html" class="drawer-link">Pricing</a>
+      <a href="events.html" class="drawer-link">Events</a>
+      <a href="booking.html" class="drawer-link">Book a Slot</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-icon-row">
+        <button type="button" class="icon-btn drawer-icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn drawer-icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-sm drawer-login-cta">Login</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- SECTION 01: CONTACT HERO -->
+    <section class="page-hero">
+      <img src="images/image-22.png" alt="Symmetrical cyberpunk gaming hall beneath honeycomb hexagonal LED ceiling panels" class="page-hero-bg" width="1600" height="1600">
+      <div class="page-hero-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-inner reveal">
+          <span class="eyebrow">Arena Desk &amp; Group Support</span>
+          <h1 class="page-hero-title">LET'S GET YOU INTO THE GAME.</h1>
+          <p class="page-hero-lead">Questions about 5-seat bootcamp reservations, tournament hosting, or multi-hour group packs? Reach out below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: CONTACT INFORMATION (4 CLEAN INFO ITEMS) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Direct Front Desk</span>
+            <h2 class="section-title">CONTACT INFORMATION.</h2>
+            <p class="section-lead">Reach our floor coordinators by phone, email, or visit Sector 4 Esports District during operating hours.</p>
+          </div>
+          <span class="demo-badge">Open Daily 10 AM – 2 AM</span>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat-card contact-info-card reveal">
+            <div class="contact-card-head">
+              <span class="contact-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div class="eyebrow">Direct Desk Phone</div>
+            </div>
+            <h3 class="card-title"><span dir="ltr">+1 (555) 014-8890</span></h3>
+            <p class="contact-card-desc">Group desk, birthday bookings &amp; bootcamp reservations.</p>
+          </div>
+
+          <div class="stat-card contact-info-card reveal">
+            <div class="contact-card-head">
+              <span class="contact-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div class="eyebrow">Support Email</div>
+            </div>
+            <h3 class="card-title"><span dir="ltr">hello@redlinearena.com</span></h3>
+            <p class="contact-card-desc">General enquiries, event coordination &amp; member help.</p>
+          </div>
+
+          <div class="stat-card contact-info-card reveal">
+            <div class="contact-card-head">
+              <span class="contact-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div class="eyebrow">Venue Address</div>
+            </div>
+            <h3 class="card-title"><span dir="ltr">420 Redline Blvd</span></h3>
+            <p class="contact-card-desc">Sector 4 Esports District &bull; Underground Deck Level B1.</p>
+          </div>
+
+          <div class="stat-card contact-info-card reveal">
+            <div class="contact-card-head">
+              <span class="contact-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div class="eyebrow">Working Hours</div>
+            </div>
+            <h3 class="card-title"><span dir="ltr">10:00 AM – 02:00 AM</span></h3>
+            <p class="contact-card-desc">Open Mon–Thu till Midnight &bull; Fri–Sun Late Night 2 AM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: VISIT THE ARENA (LOCATION & MAP PLACEHOLDER SPLIT) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split-grid contact-visit-grid">
+          <div class="split-media contact-media-card reveal">
+            <img src="images/image-30.png" alt="Upscale gaming cafe padded leather partitioned squad booths and illuminated red neon wall sign" loading="lazy" width="1200" height="1200">
+          </div>
+
+          <div class="hotspot-panel contact-map-card reveal">
+            <span class="eyebrow">Visit The Arena</span>
+            <h2 class="section-title" style="font-size:1.75rem;">FIND THE LOUNGE FLOOR.</h2>
+            <p class="text-muted mt-1">Located at <span dir="ltr">420 Redline Blvd</span> in the Sector 4 Esports District, 4 minutes from Central Rail with Underground Deck B1 parking.</p>
+
+            <!-- Stylized Arena District Vector Map -->
+            <div class="contact-map-frame">
+              <svg viewBox="0 0 560 220" width="100%" height="auto" role="img" aria-label="District Street Location Map for REDLINE ARENA at 420 Redline Blvd">
+                <defs>
+                  <radialGradient id="arenaPinGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#D71932" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#D71932" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- Map Canvas -->
+                <rect width="560" height="220" fill="#0D1016"/>
+
+                <!-- Cartographic Subtle Grid -->
+                <g stroke="#141924" stroke-width="1">
+                  <path d="M40 0V220 M80 0V220 M120 0V220 M200 0V220 M240 0V220 M280 0V220 M320 0V220 M360 0V220 M400 0V220 M480 0V220 M520 0V220"/>
+                  <path d="M0 36H560 M0 180H560"/>
+                </g>
+
+                <!-- Surrounding District Building Footprints -->
+                <g fill="#151923" stroke="#222736" stroke-width="1">
+                  <rect x="16" y="14" width="120" height="52" rx="4"/>
+                  <rect x="168" y="14" width="120" height="52" rx="4"/>
+                  <rect x="318" y="14" width="104" height="52" rx="4"/>
+                  <rect x="452" y="14" width="92" height="52" rx="4"/>
+                  <rect x="16" y="152" width="120" height="54" rx="4"/>
+                  <rect x="168" y="152" width="120" height="54" rx="4"/>
+                  <rect x="318" y="152" width="104" height="54" rx="4"/>
+                  <rect x="452" y="152" width="92" height="54" rx="4"/>
+                </g>
+
+                <!-- Secondary Avenues -->
+                <path d="M0 76 H560 M0 142 H560" stroke="#1E2330" stroke-width="10"/>
+                <path d="M152 0 V220 M302 0 V220 M436 0 V220" stroke="#1E2330" stroke-width="12"/>
+
+                <!-- Main Boulevard: Redline Blvd -->
+                <path d="M0 110 H560" stroke="#2A303E" stroke-width="20"/>
+                <path d="M0 110 H560" stroke="#474E61" stroke-width="1.2" stroke-dasharray="6 6"/>
+
+                <!-- Street Names -->
+                <text x="382" y="113" text-anchor="middle" fill="#8C93A6" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.6">REDLINE BLVD</text>
+                <text x="152" y="182" text-anchor="middle" fill="#6F7689" font-family="Inter, sans-serif" font-size="7.5" font-weight="600" letter-spacing="1.2" transform="rotate(-90 152 182)">SECTOR 4 AVE</text>
+
+                <!-- Redline Arena Highlight Footprint -->
+                <rect x="216" y="68" width="128" height="32" rx="5" fill="rgba(215, 25, 50, 0.14)" stroke="#D71932" stroke-width="1.4"/>
+
+                <!-- Walking Route from Central Rail to Arena Entrance -->
+                <path d="M68 110 H280 V100" fill="none" stroke="#D71932" stroke-width="2.5" stroke-dasharray="5 4"/>
+
+                <!-- Central Rail Station Pin -->
+                <circle cx="56" cy="110" r="11" fill="#151821" stroke="#FFFFFF" stroke-width="1.5"/>
+                <text x="56" y="114" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">M</text>
+                <rect x="14" y="126" width="92" height="18" rx="4" fill="#12151E" stroke="#343949" stroke-width="1"/>
+                <text x="60" y="138" text-anchor="middle" fill="#D4D6DD" font-family="Inter, sans-serif" font-size="8.5" font-weight="600">Central Rail (4m)</text>
+
+                <!-- Deck Parking B1 Pin -->
+                <rect x="476" y="99" width="22" height="22" rx="4" fill="#151821" stroke="#D71932" stroke-width="1.5"/>
+                <text x="487" y="114" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">P</text>
+                <rect x="444" y="126" width="88" height="18" rx="4" fill="#12151E" stroke="#343949" stroke-width="1"/>
+                <text x="488" y="138" text-anchor="middle" fill="#D4D6DD" font-family="Inter, sans-serif" font-size="8.5" font-weight="600">Deck Parking B1</text>
+
+                <!-- Main Arena Map Pin & Callout -->
+                <circle cx="280" cy="84" r="26" fill="url(#arenaPinGlow)"/>
+                <path d="M280 56 C272 56 266 62 266 70 C266 79 280 94 280 94 C280 94 294 79 294 70 C294 62 288 56 280 56 Z" fill="#D71932" stroke="#FFFFFF" stroke-width="1.5"/>
+                <circle cx="280" cy="70" r="4.5" fill="#FFFFFF"/>
+
+                <rect x="202" y="20" width="156" height="24" rx="5" fill="#090A0D" stroke="#D71932" stroke-width="1.2"/>
+                <text x="280" y="35.5" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6">REDLINE ARENA • #420</text>
+
+                <!-- Map HUD Labels -->
+                <rect x="14" y="12" width="128" height="20" rx="4" fill="rgba(9, 10, 13, 0.88)" stroke="#2D3240" stroke-width="1"/>
+                <text x="78" y="25" text-anchor="middle" fill="#FF6378" font-family="Orbitron, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.8">SECTOR 4 DISTRICT</text>
+
+                <circle cx="528" cy="28" r="14" fill="rgba(9, 10, 13, 0.88)" stroke="#2D3240" stroke-width="1"/>
+                <path d="M528 18 L531 28 L528 26 L525 28 Z" fill="#D71932"/>
+                <text x="528" y="37" text-anchor="middle" fill="#A7A9B0" font-family="Inter, sans-serif" font-size="7" font-weight="700">N</text>
+              </svg>
+
+              <div class="contact-map-caption">
+                <span><i aria-hidden="true"></i> <span dir="ltr">420 Redline Blvd &bull; Sector 4 District</span></span>
+                <span>4 Mins From Metro</span>
+              </div>
+            </div>
+
+            <div class="contact-visit-actions">
+              <button type="button" class="btn btn-primary" id="directionsModalBtn">DIRECTIONS &amp; ACCESS INFO</button>
+              <a href="booking.html" class="btn btn-secondary">BOOK BEFORE VISITING</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: CONTACT ENQUIRY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Message Us</span>
+          <h2 class="section-title">SEND AN ENQUIRY.</h2>
+          <p class="section-lead">Submit a squad booking request, tournament question, or group package enquiry below.</p>
+        </div>
+
+        <div class="hotspot-panel reveal" style="max-width:740px;margin-inline:auto;">
+          <form id="contactEnquiryForm" novalidate>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+              <div class="form-group">
+                <label class="form-label" for="cName">Your Name *</label>
+                <input type="text" id="cName" class="form-control" placeholder="Alex Mercer" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cEmail">Email Address *</label>
+                <input type="email" id="cEmail" class="form-control" placeholder="player@example.com" required>
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+              <div class="form-group">
+                <label class="form-label" for="cPhone">Phone Number *</label>
+                <input type="tel" id="cPhone" class="form-control" placeholder="+1 (555) 014-8890" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cType">Enquiry Type</label>
+                <select id="cType" class="form-control">
+                  <option value="station">Station / Group Booking</option>
+                  <option value="packages">Hour Packs &amp; Membership</option>
+                  <option value="events">Esports Tournament / Private Party</option>
+                  <option value="general">General Feedback</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cMessage">Message *</label>
+              <textarea id="cMessage" rows="4" class="form-control" placeholder="Tell us your preferred gaming zone, group size, or question..." required></textarea>
+            </div>
+
+            <div id="contactFormError" class="form-error" role="alert"></div>
+            <div id="contactFormSuccess" style="display:none;padding:12px;border-radius:8px;background:rgba(215,25,50,0.14);border:1px solid var(--red);margin-bottom:12px;"></div>
+
+            <div class="contact-form-actions">
+              <button type="submit" class="btn btn-primary">SEND ENQUIRY</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CONTACT & VENUE FAQ (5 QUESTIONS WITH DROPDOWN ARROWS) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Arena Desk Help</span>
+          <h2 class="section-title">FREQUENTLY ASKED QUESTIONS.</h2>
+          <p class="section-lead">Quick answers on walk-in availability, group reservations, personal peripherals, venue access, and support timing.</p>
+        </div>
+
+        <div class="faq-list contact-faq-list">
+          <div class="faq-item open reveal">
+            <button type="button" class="faq-trigger" aria-expanded="true">
+              <span class="faq-question">Do I need to book online before walking into the cafe?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-panel">
+              <p>Walk-ins are welcome whenever bays are open, though reserving online via Book a Slot guarantees side-by-side seating during peak Friday–Sunday evenings.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">How do I book group sessions, private parties, or a 5v5 scrim?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-panel">
+              <p>Send your preferred date, zone, and headcount using the enquiry form above, or reserve consecutive PCs and 5-seat Team Bootcamp pods (TM-A / TM-B) on the Booking page.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Can I connect my own mouse, keyboard, or headset at a station?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-panel">
+              <p>Yes. Every Standard, Premium RTX, and Team bay provides accessible front desk USB ports so you can plug in your personal gear cleanly without touching floor cabling.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Is parking and late-night transit available near the venue?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-panel">
+              <p>Underground Deck Parking (Level B1) sits beside the Sector 4 Esports District entrance, and Central Rail Station is a 4-minute walk down Redline Blvd.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">How quickly are enquiry messages and group requests handled?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-panel">
+              <p>Submitted enquiries generate an immediate reference ticket code, and venue floor coordinators review tournament, birthday, and bootcamp requests daily between 10:00 AM and 02:00 AM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-lockup">
+            <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+              <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+              <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+              <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+              <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-name">REDLINE ARENA</span>
+              <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+            </span>
+          </a>
+          <p class="mt-2 footer-desc">High-performance PC stations, esports team bays, sim cockpits, and online seat booking built around one red-black-white esports standard.</p>
+          <div class="footer-social">
+            <a href="#social-instagram" class="social-pill social-icon-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#social-youtube" class="social-pill social-icon-btn" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,9 15.5,12 10,15" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#social-facebook" class="social-pill social-icon-btn" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#social-discord" class="social-pill social-icon-btn" aria-label="Discord" title="Discord">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="stations.html">Stations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Gaming</h3>
+          <ul class="footer-links">
+            <li><a href="pricing.html">Pricing &amp; Packs</a></li>
+            <li><a href="events.html">Esports Events</a></li>
+            <li><a href="booking.html">Book a Slot</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Customer</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Gamer Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Details</h3>
+          <ul class="footer-links">
+            <li>Phone: +1 (555) 014-8890</li>
+            <li>Email: hello@redlinearena.com</li>
+            <li>420 Redline Blvd, Sector 4 District</li>
+            <li>Daily: 10:00 AM – 02:00 AM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 REDLINE ARENA. Esports Gaming Cafe, PC Lounge &amp; Sim Racing Venue.</span>
+        <span>Online station booking, hour packs &amp; tournament hubs.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REDLINE ARENA | Home 2 — Interactive Gaming Discovery &amp; Booking</title>
+  <meta name="description" content="Explore gaming zones, match your playstyle to custom PC stations, search our game library, and book gaming slots online at REDLINE ARENA.">
+  <meta property="og:title" content="REDLINE ARENA — Interactive Discovery Experience">
+  <meta property="og:description" content="Your Game. Your Station. Your Rules. Discover zones, hardware, games, and hour packs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700&family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('redline_theme')||'dark');document.documentElement.setAttribute('dir',localStorage.getItem('redline_dir')||'ltr');}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-lockup" aria-label="REDLINE ARENA Home">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="games.html" class="nav-link">Games</a>
+        <a href="stations.html" class="nav-link">Stations</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="booking.html" class="nav-link">Book a Slot</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-cta">Login</a>
+        <button type="button" class="hamburger-btn" id="drawerOpenBtn" aria-label="Open navigation menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-lockup">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING LOUNGE</span>
+        </span>
+      </a>
+      <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Drawer Links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home-2.html" class="drawer-link">Home 2</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="games.html" class="drawer-link">Games</a>
+      <a href="stations.html" class="drawer-link">Stations</a>
+      <a href="pricing.html" class="drawer-link">Pricing</a>
+      <a href="events.html" class="drawer-link">Events</a>
+      <a href="booking.html" class="drawer-link">Book a Slot</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-icon-row">
+        <button type="button" class="icon-btn drawer-icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn drawer-icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-sm drawer-login-cta">Login</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- SECTION 01: SPLIT-SCREEN HERO -->
+    <section class="hero-split">
+      <div class="hero-split-bg-wrap" aria-hidden="true">
+        <img src="images/image-38.png" alt="" class="hero-split-bg-img" width="640" height="640">
+      </div>
+      <div class="hero-split-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-split-grid">
+          <div class="reveal">
+            <span class="eyebrow">Interactive Arena Discovery</span>
+            <h1 class="hero-split-title">YOUR GAME. YOUR STATION. <span class="text-red">YOUR RULES.</span></h1>
+            <p class="section-lead">Discover your perfect gaming setup, explore your favourite titles and experience gaming without limits.</p>
+            <div class="hero-cta-group mt-3">
+              <a href="stations.html" class="btn btn-primary">FIND YOUR GAMING STATION</a>
+              <a href="games.html" class="btn btn-secondary">EXPLORE GAME LIBRARY</a>
+            </div>
+            <div class="hero-metrics-strip">
+              <div>
+                <div style="font-family:var(--font-hud);font-size:clamp(0.96rem,2.4vw,1.35rem);font-weight:700;color:var(--red);">4 ZONES</div>
+                <div class="text-muted" style="font-size:0.76rem;line-height:1.25;">Standard, RTX, 5v5 &amp; Sim</div>
+              </div>
+              <div>
+                <div style="font-family:var(--font-hud);font-size:clamp(0.96rem,2.4vw,1.35rem);font-weight:700;">360Hz</div>
+                <div class="text-muted" style="font-size:0.76rem;line-height:1.25;">Esports Refresh</div>
+              </div>
+              <div>
+                <div style="font-family:var(--font-hud);font-size:clamp(0.96rem,2.4vw,1.35rem);font-weight:700;">ONLINE</div>
+                <div class="text-muted" style="font-size:0.76rem;line-height:1.25;">Instant Seat Booking</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-split-media reveal">
+            <img src="images/image-43.png" alt="High-performance FPS gaming desk featuring white glass RTX rig with LCD cooling screen and widescreen shooter display" width="1536" height="1024">
+            <div class="floating-tech-labels">
+              <span class="tech-pill">HIGH PERFORMANCE</span>
+              <span class="tech-pill">IMMERSIVE DISPLAY</span>
+              <span class="tech-pill">COMPETITIVE READY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: INTERACTIVE GAMING STYLE EXPLORER -->
+    <section class="section section-alt" id="h2StyleExplorer">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Playstyle Matchmaker</span>
+          <h2 class="section-title">WHAT KIND OF GAMER ARE YOU?</h2>
+          <p class="section-lead">Select your playstyle to dynamically update suggested games, station recommendations, and direct booking links.</p>
+        </div>
+
+        <div class="zone-selector-grid" style="margin-bottom:24px;" role="tablist" aria-label="Gamer Style Selector">
+          <button type="button" class="zone-option active" data-style-key="competitive">
+            <img src="images/image-71.png" alt="Focused competitive esports player behind ZOWIE monitor" loading="lazy" width="1200" height="800">
+            <div class="zone-option-body">
+              <strong style="font-family:var(--font-display);">Competitive Gamer</strong>
+              <div class="text-muted" style="font-size:0.82rem;">360Hz FPS &amp; Ranked Scrims</div>
+            </div>
+          </button>
+          <button type="button" class="zone-option" data-style-key="casual">
+            <img src="images/image-49.png" alt="Ambient space-themed ultrawide lounge setup" loading="lazy" width="1000" height="667">
+            <div class="zone-option-body">
+              <strong style="font-family:var(--font-display);">Casual Gamer</strong>
+              <div class="text-muted" style="font-size:0.82rem;">Ultrawide &amp; Cozy Lounge</div>
+            </div>
+          </button>
+          <button type="button" class="zone-option" data-style-key="racing">
+            <img src="images/image-103.png" alt="Gloved sim racer driving open-wheel track circuit" loading="lazy" width="853" height="815">
+            <div class="zone-option-body">
+              <strong style="font-family:var(--font-display);">Racing Enthusiast</strong>
+              <div class="text-muted" style="font-size:0.82rem;">Force-Feedback GT Cockpits</div>
+            </div>
+          </button>
+          <button type="button" class="zone-option" data-style-key="multiplayer">
+            <img src="images/image-4.png" alt="Friends wearing headsets playing side-by-side in MOBA LAN row" loading="lazy" width="1024" height="683">
+            <div class="zone-option-body">
+              <strong style="font-family:var(--font-display);">Multiplayer Player</strong>
+              <div class="text-muted" style="font-size:0.82rem;">Squad Rows &amp; Co-Op Nights</div>
+            </div>
+          </button>
+        </div>
+
+        <div class="hotspot-panel reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;">
+          <div style="flex:1 1 420px;">
+            <span class="demo-badge">Matched Recommendation</span>
+            <h3 id="h2StyleTitle" class="mt-2" style="font-family:var(--font-display);font-size:1.65rem;">Competitive FPS &amp; Esports Ready</h3>
+            <p id="h2StyleStation" class="mt-1" style="font-weight:700;color:var(--red);">Recommended: Team Bootcamp &amp; Premium 360Hz Pods</p>
+            <p id="h2StyleGames" class="mt-1" style="font-size:0.94rem;">Suggested Titles: Valorant, Counter-Strike 2, Apex Shooters</p>
+            <p id="h2StyleDesc" class="text-muted mt-2">Low-latency wired rigs with BenQ-grade 240Hz–360Hz displays, lightweight mice, and team comms isolation.</p>
+          </div>
+          <div>
+            <a id="h2StyleCta" href="booking.html?zone=team" class="btn btn-primary">Book Competitive Setup</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: EXPLORE YOUR GAMING ZONES -->
+    <section class="section" id="h2ZoneExplorer">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Four Dedicated Floors</span>
+            <h2 class="section-title">CHOOSE YOUR WAY TO PLAY.</h2>
+            <p class="section-lead">Switch between our four gaming environments to preview seating, hardware tiers, and hourly rates.</p>
+          </div>
+          <a href="stations.html" class="btn btn-secondary">FULL STATION CATALOG</a>
+        </div>
+
+        <div class="split-grid">
+          <div class="reveal grid-2-resp">
+            <button type="button" class="zone-option active" data-h2-zone="standard">
+              <img src="images/image-32.png" alt="Standard PC Zone aisle with red under-desk glow and racing chairs" loading="lazy" width="2224" height="1196">
+              <div class="zone-option-body">
+                <strong style="font-family:var(--font-display);font-size:0.95rem;">Standard PC Zone</strong>
+                <div class="text-muted" style="font-size:0.78rem;">$6 / hr</div>
+              </div>
+            </button>
+            <button type="button" class="zone-option" data-h2-zone="premium">
+              <img src="images/image-17.png" alt="Premium PC Zone with curved monitors and overhead glass RGB towers" loading="lazy" width="1400" height="900">
+              <div class="zone-option-body">
+                <strong style="font-family:var(--font-display);font-size:0.95rem;">Premium PC Zone</strong>
+                <div class="text-muted" style="font-size:0.78rem;">$9 / hr</div>
+              </div>
+            </button>
+            <button type="button" class="zone-option" data-h2-zone="team">
+              <img src="images/image-23.png" alt="5v5 Team Gaming bootcamp rows with ASUS TUF monitors and Cougar chairs" loading="lazy" width="1618" height="1080">
+              <div class="zone-option-body">
+                <strong style="font-family:var(--font-display);font-size:0.95rem;">Team Gaming Zone</strong>
+                <div class="text-muted" style="font-size:0.78rem;">$12 / hr</div>
+              </div>
+            </button>
+            <button type="button" class="zone-option" data-h2-zone="racing">
+              <img src="images/image-106.png" alt="Aluminum sim racing cockpit with bucket seat, wheel, and GT3 ultrawide monitor" loading="lazy" width="1440" height="1440">
+              <div class="zone-option-body">
+                <strong style="font-family:var(--font-display);font-size:0.95rem;">Racing Simulator</strong>
+                <div class="text-muted" style="font-size:0.78rem;">$14 / hr</div>
+              </div>
+            </button>
+          </div>
+
+          <div class="hotspot-panel reveal">
+            <span class="demo-badge" id="h2ZoneRate">$6 / hr</span>
+            <h3 id="h2ZoneTitle" class="mt-2" style="font-family:var(--font-display);font-size:1.65rem;">Standard PC Zone</h3>
+            <p id="h2ZoneDesc" class="text-muted mt-2">Red-accented main floor bays featuring ergonomic racing chairs, mechanical RGB keyboards, and 240Hz monitors ready for solo or duo queues.</p>
+            <ul class="split-list">
+              <li>Click any of the four zone tiles to compare workstation specs &amp; hourly rates.</li>
+              <li>Seating, headset hygiene, and pre-installed multiplayer launchers included.</li>
+            </ul>
+            <a id="h2ZoneBook" href="booking.html?zone=standard" class="btn btn-primary">Book This Zone</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: GAME DISCOVERY INTERFACE (6 CARDS — CARD SECTION #1) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Filterable Discovery</span>
+            <h2 class="section-title">FIND YOUR NEXT FAVOURITE GAME.</h2>
+            <p class="section-lead">Search or filter across six core genres available across our PC and lounge stations.</p>
+          </div>
+          <span class="demo-badge" id="h2ActiveFilterLabel">Showing 6 game(s) &bull; Filter: All</span>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-chips" id="h2GameFilters" role="group" aria-label="Game Category Filters">
+            <button type="button" class="tab-chip active" data-cat-filter="All">All</button>
+            <button type="button" class="tab-chip" data-cat-filter="FPS">FPS</button>
+            <button type="button" class="tab-chip" data-cat-filter="Battle Royale">Battle Royale</button>
+            <button type="button" class="tab-chip" data-cat-filter="Open World">Open World</button>
+            <button type="button" class="tab-chip" data-cat-filter="Racing">Racing</button>
+            <button type="button" class="tab-chip" data-cat-filter="Sports">Sports</button>
+            <button type="button" class="tab-chip" data-cat-filter="Adventure">Adventure</button>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex:1 1 280px;justify-content:flex-end;">
+            <div class="search-box">
+              <label for="h2GameSearch" class="sr-only">Search games</label>
+              <input type="search" id="h2GameSearch" class="form-control" placeholder="Search games (e.g. Fortnite, Racing)...">
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm" id="h2ClearGameFilters">Clear</button>
+          </div>
+        </div>
+
+        <div class="grid-6" id="h2GamesGrid">
+          <article class="card reveal" data-game-card data-category="Battle Royale" data-title="Fortnite Battle Royale">
+            <div class="card-media">
+              <img src="images/image-10.png" alt="Triple-monitor creator station actively running Fortnite Battle Royale on center display" loading="lazy" width="1920" height="1071">
+              <span class="card-badge">Battle Royale</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Fortnite Battle Royale</h3>
+              <p class="card-desc">High-frame building &amp; zero-build sessions paired with creator capture setups for squad clips.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="fortnite">Game Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-game-card data-category="Open World" data-title="Cyberpunk Open-World RPG">
+            <div class="card-media">
+              <img src="images/image-82.png" alt="Stacked curved ultrawide monitor showing rainy cyberpunk city shooter beside custom liquid-cooled PC" loading="lazy" width="1024" height="1024">
+              <span class="card-badge">Open World</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cyberpunk Open-World RPG</h3>
+              <p class="card-desc">Ray-traced futuristic city exploration powered by custom hard-tube liquid-cooled RTX stations.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="cyber-rpg">Game Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-game-card data-category="Racing" data-title="Need for Speed Heat Street Racing">
+            <div class="card-media">
+              <img src="images/image-92.png" alt="Private console booth 4 illuminated in blue LED with TV showing Need for Speed Heat" loading="lazy" width="920" height="620">
+              <span class="card-badge">Racing</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Street Drift &amp; NFS Heat</h3>
+              <p class="card-desc">Arcade street sprints in numbered console booths or force-feedback sim racing bays.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="nfs-heat">Game Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-game-card data-category="Sports" data-title="EA Sports FC 25 Lounge">
+            <div class="card-media">
+              <img src="images/image-27.png" alt="Multi-TV console lounge displaying EA Sports FC 25, Rocket League, Fortnite, and WWE 2K25" loading="lazy" width="870" height="524">
+              <span class="card-badge">Sports</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">EA Sports FC 25 Lounge</h3>
+              <p class="card-desc">Head-to-head football rivalries and couch sports nights inside plush recliner pods.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="fc25">Game Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-game-card data-category="Adventure" data-title="Horizon PS5 Epics">
+            <div class="card-media">
+              <img src="images/image-94.png" alt="PlayStation lounge screen showing jungle open-world adventure gameplay over modular blue sofas" loading="lazy" width="1280" height="854">
+              <span class="card-badge">Adventure</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Horizon &amp; PS5 Epics</h3>
+              <p class="card-desc">Cinematic solo and co-op console adventures seated under vibrant PlayStation lounge lighting.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="horizon-ps5">Game Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-game-card data-category="FPS" data-title="Triple-Screen Tactical Ops">
+            <div class="card-media">
+              <img src="images/image-42.png" alt="Triple-monitor curved arc running panoramic street tactical FPS combat" loading="lazy" width="1408" height="768">
+              <span class="card-badge">FPS</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Triple-Screen Tactical Ops</h3>
+              <p class="card-desc">Wide panoramic field-of-view combat across three bezel-matched displays and broadcast mics.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-game-modal="street-fps">Game Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div id="h2GameEmpty" class="hotspot-panel mt-3" style="display:none;text-align:center;">
+          <p>No installed titles match your current search/filter. Click <strong>Clear</strong> above to reset the 6-game lineup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: GAMING HARDWARE EXPLORER (NON-CARD CENTRAL COMPOSITION) -->
+    <section class="section" id="h2HardwareExplorer">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Workstation Anatomy</span>
+            <h2 class="section-title">TAKE A CLOSER LOOK AT THE POWER.</h2>
+            <p class="section-lead">Inspect every piece of equipment across a single station setup without digging through spec sheets.</p>
+          </div>
+          <span class="demo-badge">Core Arena Hardware</span>
+        </div>
+
+        <div class="hotspot-layout">
+          <div class="hotspot-panel reveal" style="display:grid;gap:14px;">
+            <div class="hotspot-tabs">
+              <button type="button" class="tab-chip active" data-hw-key="tower">PC Tower</button>
+              <button type="button" class="tab-chip" data-hw-key="monitor">Gaming Monitor</button>
+              <button type="button" class="tab-chip" data-hw-key="keyboard">Keyboard</button>
+              <button type="button" class="tab-chip" data-hw-key="mouse">Mouse</button>
+              <button type="button" class="tab-chip" data-hw-key="headset">Headset</button>
+              <button type="button" class="tab-chip" data-hw-key="chair">Gaming Chair</button>
+            </div>
+            <h3 id="h2HwTitle" style="font-family:var(--font-display);font-size:1.5rem;">Dual-Chamber Tempered Glass PC Tower</h3>
+            <p id="h2HwSpec" style="font-family:var(--font-tech);font-weight:700;color:var(--red);">High-Airflow White Panoramic Glass &bull; RTX GPU &bull; DDR5 &bull; 7 PWM RGB Fans</p>
+            <p id="h2HwDesc" class="text-muted">High-airflow dual-chamber enclosures showcase liquid-cooled processors and triple-fan GPUs kept cool all day.</p>
+
+            <div class="spec-strip" style="margin-top:8px;padding-top:16px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));">
+              <div style="border:1px solid var(--border-subtle);border-radius:6px;overflow:hidden;">
+                <img src="images/image-48.png" alt="Triple BenQ monitor creator setup against black slat wall" loading="lazy" width="1600" height="1200" style="width:100%;aspect-ratio:16/10;object-fit:cover;">
+              </div>
+              <div style="border:1px solid var(--border-subtle);border-radius:6px;overflow:hidden;">
+                <img src="images/image-54.png" alt="Razer wireless headset on stand beside green-lit mechanical keyboard" loading="lazy" width="1214" height="1214" style="width:100%;aspect-ratio:16/10;object-fit:cover;">
+              </div>
+              <div style="border:1px solid var(--border-subtle);border-radius:6px;overflow:hidden;">
+                <img src="images/image-41.png" alt="Super-ultrawide display with pegboard custom keyboards and DualSense dock" loading="lazy" width="1920" height="1080" style="width:100%;aspect-ratio:16/10;object-fit:cover;">
+              </div>
+            </div>
+          </div>
+
+          <div class="hotspot-stage reveal">
+            <img id="h2HwImg" src="images/image-40.png" alt="Panoramic tempered glass white custom gaming PC tower with liquid cooler and RTX graphics" loading="lazy" width="1440" height="1440">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: HOUR PACK COMPARISON TABLE (NON-CARD) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Transparent Hourly Rates</span>
+            <h2 class="section-title">CHOOSE YOUR PLAYTIME.</h2>
+            <p class="section-lead">Compare flexible hour packs directly side-by-side. Unused pack hours remain stored inside your Gamer Dashboard wallet until expiry.</p>
+          </div>
+          <a href="pricing.html" class="btn btn-secondary">PRICING DETAILS &amp; FAQ</a>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Hour Package</th>
+                <th>Duration</th>
+                <th>Pack Price</th>
+                <th>Included Benefits</th>
+                <th>Validity</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Quick Play</strong></td>
+                <td>1 Hour</td>
+                <td><strong>$6.00</strong></td>
+                <td>Standard PC Zone access &bull; Instant guest or member login</td>
+                <td>Same Day Pass</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-buy-pack="quick-1h">Get 1h Pack</button></td>
+              </tr>
+              <tr>
+                <td><strong>Power Session</strong></td>
+                <td>3 Hours</td>
+                <td><strong>$16.00</strong></td>
+                <td>Split across visits &bull; All Standard PCs &amp; Console Lounge eligible</td>
+                <td>14 Days Rollover</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-buy-pack="power-3h">Get 3h Pack</button></td>
+              </tr>
+              <tr>
+                <td><strong>Pro Gamer (Recommended)</strong></td>
+                <td>5 Hours</td>
+                <td><strong>$25.00</strong></td>
+                <td>$5/hr effective rate &bull; Priority station booking &amp; wallet rollover</td>
+                <td>30 Days Rollover</td>
+                <td><button type="button" class="btn btn-primary btn-sm" data-buy-pack="pro-5h">Get 5h Pack</button></td>
+              </tr>
+              <tr>
+                <td><strong>Ultimate Pack</strong></td>
+                <td>10 Hours</td>
+                <td><strong>$45.00</strong></td>
+                <td>Lowest $4.50/hr rate &bull; Eligible for Standard, Premium &amp; Bootcamp upgrades</td>
+                <td>60 Days Rollover</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-buy-pack="ultimate-10h">Get 10h Pack</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: GAMING SESSION BOOKING PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Instant Configurator</span>
+            <h2 class="section-title">FROM YOUR SCREEN TO YOUR GAMING STATION.</h2>
+            <p class="section-lead">Preview a 5-step station booking below before confirming your time slot on the Booking page.</p>
+          </div>
+          <span class="demo-badge">Real-Time Slot Preview</span>
+        </div>
+
+        <div class="split-grid">
+          <div class="hotspot-panel reveal">
+            <form id="h2QuickPreviewForm">
+              <div class="form-group">
+                <label class="form-label" for="h2PrevZone">1. Choose a Gaming Zone</label>
+                <select id="h2PrevZone" class="form-control">
+                  <option value="standard">Standard PC Zone ($6/hr)</option>
+                  <option value="premium">Premium PC Zone ($9/hr)</option>
+                  <option value="team">Team Gaming Zone ($12/hr)</option>
+                  <option value="racing">Racing Simulator Zone ($14/hr)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="h2PrevStation">2. Select a PC Station</label>
+                <select id="h2PrevStation" class="form-control"></select>
+              </div>
+              <div class="grid-2-resp">
+                <div class="form-group">
+                  <label class="form-label" for="h2PrevDate">3. Select Date</label>
+                  <input type="date" id="h2PrevDate" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="h2PrevTime">4. Choose Time</label>
+                  <select id="h2PrevTime" class="form-control">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="18:00" selected>06:00 PM</option>
+                    <option value="20:00">08:00 PM</option>
+                    <option value="21:00">09:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="form-label">5. Review Preview Details</span>
+                <div id="h2PrevSummary" class="card-meta-list" style="padding:12px;background:var(--bg-alt);border-radius:8px;"></div>
+              </div>
+              <a id="h2PrevGoBtn" href="booking.html" class="btn btn-primary btn-block">START YOUR BOOKING</a>
+            </form>
+          </div>
+
+          <div class="split-media reveal">
+            <img src="images/image-35.png" alt="Symmetrical numbered esports aisle stations 12 through 18 with DXRacer seating and glowing blue rigs" loading="lazy" width="1444" height="962">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08: COMMUNITY FINAL CTA -->
+    <section class="cta-banner">
+      <img src="images/image-13.png" alt="Futuristic portal-lit gaming cafe aisle combining PC rows and friends playing console soccer on lounge sofa" class="cta-banner-bg" loading="lazy" width="1600" height="1067">
+      <div class="cta-banner-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-banner-inner reveal">
+          <span class="eyebrow">Join The Arena</span>
+          <h2 class="page-hero-title">YOUR NEXT GAMING STORY STARTS HERE.</h2>
+          <p class="page-hero-lead">Register a gamer profile, manage prepaid hour packs, and reserve stations for your whole crew in seconds.</p>
+          <div class="mt-3" style="display:flex;flex-wrap:wrap;gap:14px;">
+            <a href="register.html" class="btn btn-primary">JOIN THE ARENA</a>
+            <a href="dashboard.html" class="btn btn-outline-light">OPEN GAMER DASHBOARD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-lockup">
+            <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+              <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+              <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+              <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+              <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-name">REDLINE ARENA</span>
+              <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+            </span>
+          </a>
+          <p class="mt-2 footer-desc">High-performance PC stations, esports team bays, sim cockpits, and online seat booking built around one red-black-white esports standard.</p>
+          <div class="footer-social">
+            <a href="#social-instagram" class="social-pill social-icon-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#social-youtube" class="social-pill social-icon-btn" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,9 15.5,12 10,15" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#social-facebook" class="social-pill social-icon-btn" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#social-discord" class="social-pill social-icon-btn" aria-label="Discord" title="Discord">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="stations.html">Stations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Gaming</h3>
+          <ul class="footer-links">
+            <li><a href="pricing.html">Pricing &amp; Packs</a></li>
+            <li><a href="events.html">Esports Events</a></li>
+            <li><a href="booking.html">Book a Slot</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Customer</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Gamer Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Details</h3>
+          <ul class="footer-links">
+            <li>Phone: +1 (555) 014-8890</li>
+            <li>Email: hello@redlinearena.com</li>
+            <li>420 Redline Blvd, Sector 4 District</li>
+            <li>Daily: 10:00 AM – 02:00 AM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 REDLINE ARENA. Esports Gaming Cafe, PC Lounge &amp; Sim Racing Venue.</span>
+        <span>Online station booking, hour packs &amp; tournament hubs.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

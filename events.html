@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Events | REDLINE ARENA — Tournaments &amp; Community Nights</title>
+  <meta name="description" content="Discover upcoming esports brackets, multiplayer LAN weekends, sim racing nights, and tournament formats at REDLINE ARENA.">
+  <meta property="og:title" content="REDLINE ARENA Esports Events">
+  <meta property="og:description" content="Compete. Connect. Conquer. Tournament schedules, stage infrastructure, and community event nights.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700&family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('redline_theme')||'dark');document.documentElement.setAttribute('dir',localStorage.getItem('redline_dir')||'ltr');}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-lockup" aria-label="REDLINE ARENA Home">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="games.html" class="nav-link">Games</a>
+        <a href="stations.html" class="nav-link">Stations</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="booking.html" class="nav-link">Book a Slot</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm nav-login-cta">Login</a>
+        <button type="button" class="hamburger-btn" id="drawerOpenBtn" aria-label="Open navigation menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-lockup">
+        <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+          <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+          <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+          <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+          <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">REDLINE ARENA</span>
+          <span class="brand-sub">GAMING LOUNGE</span>
+        </span>
+      </a>
+      <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Drawer Links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home-2.html" class="drawer-link">Home 2</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="games.html" class="drawer-link">Games</a>
+      <a href="stations.html" class="drawer-link">Stations</a>
+      <a href="pricing.html" class="drawer-link">Pricing</a>
+      <a href="events.html" class="drawer-link">Events</a>
+      <a href="booking.html" class="drawer-link">Book a Slot</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-icon-row">
+        <button type="button" class="icon-btn drawer-icon-btn" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch Light / Dark Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn drawer-icon-btn" data-rtl-toggle aria-label="Toggle RTL direction" aria-pressed="false" title="Switch LTR / RTL Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4"/><path d="M4 7h16"/><path d="m8 21-4-4 4-4"/><path d="M20 17H4"/></svg>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-sm drawer-login-cta">Login</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- SECTION 01: EVENTS HERO -->
+    <section class="page-hero">
+      <img src="images/image-61.png" alt="Silver championship trophy glowing beneath radial spotlight beams on massive esports arena stage" class="page-hero-bg" width="1200" height="675">
+      <div class="page-hero-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-inner reveal">
+          <span class="eyebrow">Esports &amp; Community Gatherings</span>
+          <h1 class="page-hero-title">COMPETE. CONNECT. CONQUER.</h1>
+          <p class="page-hero-lead">Weekend LAN tournaments, casual community mixers, and leaderboard time trials built around friendly local competition.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: UPCOMING GAMING EVENTS (4 EVENT CARDS — CARD SECTION #1) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Arena Event Calendar</span>
+            <h2 class="section-title">UPCOMING GAMING EVENTS.</h2>
+            <p class="section-lead">Browse upcoming tournament formats and open community nights hosted across our bootcamp and main stage rows.</p>
+          </div>
+          <span class="demo-badge">Open Community Brackets</span>
+        </div>
+
+        <div class="grid-4">
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="images/image-60.png" alt="Five-player esports roster competing side-by-side on live stage in front of crowd" loading="lazy" width="2048" height="1366">
+              <span class="card-badge">Nov 21</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Redline FPS Championship</h3>
+              <p class="card-desc">Five-stack double-elimination shooter bracket played on matched 360Hz tournament rows.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-event-modal="fps-champ">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="images/image-64.png" alt="Esports players competing in League of Legends stage match beneath large screen" loading="lazy" width="2397" height="1600">
+              <span class="card-badge">Nov 29</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Multiplayer Weekend</h3>
+              <p class="card-desc">Open MOBA drafts, duo bot-lane challenges, and casual console side-brackets all weekend.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-event-modal="moba-weekend">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="images/image-74.png" alt="Gamer shouting callouts into boom mic beside RISE tournament bracket monitor" loading="lazy" width="1360" height="784">
+              <span class="card-badge">Dec 04</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Racing &amp; Bracket Night</h3>
+              <p class="card-desc">Hot-lap leaderboard challenges paired with live bracket projections at the streamer desk.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-event-modal="racing-challenge">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="images/image-18.png" alt="Crowded LAN party floor under RGB hexagon ceiling lights with players and spectators" loading="lazy" width="534" height="321">
+              <span class="card-badge">Every Friday</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Community Gaming Night</h3>
+              <p class="card-desc">Welcoming drop-in mixer for students, solo players, and local squads to form pickups.</p>
+              <div class="card-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-event-modal="community-night">View Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TOURNAMENT EXPERIENCE (BALANCED EDITORIAL SPLIT SHOWCASE) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="events-infra-grid">
+          <div class="events-infra-copy reveal">
+            <div>
+              <span class="eyebrow">Competitive Infrastructure</span>
+              <h2 class="section-title">BUILT FOR SMOOTH TOURNAMENT PLAY.</h2>
+              <p class="section-lead">Local competitions succeed when setups are identical, check-ins stay organized, and teammates hear every callout cleanly without external chaos.</p>
+            </div>
+
+            <div class="events-infra-pillars">
+              <div class="events-infra-pillar">
+                <span class="events-infra-num">01</span>
+                <div>
+                  <strong style="font-family:var(--font-display);font-size:1rem;">Matched 5-Seat Team Rows</strong>
+                  <p class="text-muted" style="font-size:0.9rem;margin-top:4px;">Teammates sit shoulder-to-shoulder on uniform 360Hz rigs with unobstructed coach walkways right behind.</p>
+                </div>
+              </div>
+              <div class="events-infra-pillar">
+                <span class="events-infra-num">02</span>
+                <div>
+                  <strong style="font-family:var(--font-display);font-size:1rem;">Low-Latency LAN &amp; Audio Isolation</strong>
+                  <p class="text-muted" style="font-size:0.9rem;margin-top:4px;">Wired Ethernet routing and noise-isolating tournament headsets eliminate ping jitter and crowd bleed.</p>
+                </div>
+              </div>
+              <div class="events-infra-pillar">
+                <span class="events-infra-num">03</span>
+                <div>
+                  <strong style="font-family:var(--font-display);font-size:1rem;">Live Bracket Boards &amp; Spectator Feeds</strong>
+                  <p class="text-muted" style="font-size:0.9rem;margin-top:4px;">On-site bracket displays and lobby screens keep players, casters, and friends synced between rounds.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-pair" style="display:flex;flex-wrap:wrap;gap:12px;">
+              <a href="booking.html?zone=team" class="btn btn-primary">BOOK 5-SEAT BOOTCAMP</a>
+              <a href="stations.html" class="btn btn-secondary">INSPECT STAGE RIGS</a>
+            </div>
+          </div>
+
+          <div class="events-infra-media reveal">
+            <figure class="events-infra-frame">
+              <img src="images/image-63.png" alt="Five-player pro roster seated on live esports stage with coach watching behind and crowd glowing blue" loading="lazy" width="5160" height="3440">
+              <figcaption class="mosaic-caption">Matched 5-Player Stage Roster &amp; Coach Walkway</figcaption>
+            </figure>
+            <figure class="events-infra-frame">
+              <img src="images/image-9.png" alt="Pro esports player cheering passionately into headset mic on magenta-lit tournament stage" loading="lazy" width="1799" height="1199" style="object-position:center 28%;">
+              <figcaption class="mosaic-caption">Live Comms &amp; Overtime Stage Energy</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: CONCEPT EVENT GALLERY (ASYMMETRIC MULTI-PROPORTION SHOWCASE) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Arena Atmosphere</span>
+            <h2 class="section-title">ARENA EVENT ATMOSPHERE GALLERY.</h2>
+            <p class="section-lead">Stage rows, packed watch parties, bootcamp scrimmage bays, and neon-lit sim decks inside REDLINE ARENA.</p>
+          </div>
+          <span class="demo-badge">Arena Stage &amp; Floor Vibes</span>
+        </div>
+
+        <div class="gallery-asymmetric">
+          <figure class="mosaic-tile portrait reveal">
+            <img src="images/image-31.png" alt="Symmetrical tournament gaming bar featuring two team stage booths and three MOBA broadcast screens" loading="lazy" width="765" height="1024" style="object-position:top center;">
+            <figcaption class="mosaic-caption">Elevated Team Stage Booths &amp; Refreshment Bar</figcaption>
+          </figure>
+
+          <div class="gallery-asymmetric-right">
+            <figure class="mosaic-tile reveal">
+              <img src="images/image-36.png" alt="Crowded neon pink-and-blue gaming floor packed with headset-wearing players" loading="lazy" width="640" height="429" style="object-position:center bottom;">
+              <figcaption class="mosaic-caption">Full-House LAN Night Energy</figcaption>
+            </figure>
+            <figure class="mosaic-tile reveal">
+              <img src="images/image-12.png" alt="Black feature wall lit with colorful neon signs reading Game Night, Gamer Play and Win, and Level Up" loading="lazy" width="1200" height="627">
+              <figcaption class="mosaic-caption">Arcade Neon Game Night Zone</figcaption>
+            </figure>
+            <figure class="mosaic-tile gallery-asymmetric-wide reveal">
+              <img src="images/image-62.png" alt="Five-player stage squad playing before large blue arena scoreboard and spectator crowd" loading="lazy" width="1408" height="768">
+              <figcaption class="mosaic-caption">Live Main Stage &amp; Spectator Broadcast Concept</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: JOIN THE COMMUNITY CTA -->
+    <section class="cta-banner">
+      <img src="images/image-76.png" alt="Dual-monitor streamer desk beneath large wall TV displaying championship match broadcast" class="cta-banner-bg" loading="lazy" width="1024" height="1024">
+      <div class="cta-banner-scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-banner-inner reveal">
+          <span class="eyebrow">Assemble Your Squad</span>
+          <h2 class="page-hero-title">READY TO PLAY WITH THE BEST?</h2>
+          <p class="page-hero-lead">Bank multi-hour packs for your weekly practice nights or book a full 5-seat bootcamp pod.</p>
+          <div class="mt-3" style="display:flex;flex-wrap:wrap;gap:14px;">
+            <a href="pricing.html" class="btn btn-primary">EXPLORE GAMING PACKAGES</a>
+            <a href="booking.html?zone=team" class="btn btn-outline-light">BOOK 5-SEAT BOOTCAMP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-lockup">
+            <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+              <polygon points="32,3 58,15 54,44 32,61 10,44 6,15" fill="#090A0D" stroke="#D71932" stroke-width="3"/>
+              <polygon points="18,20 38,20 45,27 36,34 46,46 37,46 28,34 25,34 25,46 18,46" fill="#FFFFFF"/>
+              <polygon points="32,12 48,19 46,24 32,18 18,24 16,19" fill="#D71932"/>
+              <rect x="25" y="25" width="11" height="4" fill="#D71932"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-name">REDLINE ARENA</span>
+              <span class="brand-sub">GAMING CAFE &amp; PC LOUNGE</span>
+            </span>
+          </a>
+          <p class="mt-2 footer-desc">High-performance PC stations, esports team bays, sim cockpits, and online seat booking built around one red-black-white esports standard.</p>
+          <div class="footer-social">
+            <a href="#social-instagram" class="social-pill social-icon-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#social-youtube" class="social-pill social-icon-btn" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,9 15.5,12 10,15" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#social-facebook" class="social-pill social-icon-btn" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#social-discord" class="social-pill social-icon-btn" aria-label="Discord" title="Discord">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="stations.html">Stations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Gaming</h3>
+          <ul class="footer-links">
+            <li><a href="pricing.html">Pricing &amp; Packs</a></li>
+            <li><a href="events.html">Esports Events</a></li>
+            <li><a href="booking.html">Book a Slot</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Customer</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Gamer Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Details</h3>
+          <ul class="footer-links">
+            <li>Phone: +1 (555) 014-8890</li>
+            <li>Email: hello@redlinearena.com</li>
+            <li>420 Redline Blvd, Sector 4 District</li>
+            <li>Daily: 10:00 AM – 02:00 AM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 REDLINE ARENA. Esports Gaming Cafe, PC Lounge &amp; Sim Racing Venue.</span>
+        <span>Online station booking, hour packs &amp; tournament hubs.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
