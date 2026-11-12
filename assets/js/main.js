@@ -2005,6 +2005,51 @@
         }, 650);
       });
     }
+
+    // Social Authentication (Apple & Google)
+    document.querySelectorAll('[data-social-auth]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const provider = btn.getAttribute('data-social-auth');
+        const isApple = provider === 'apple';
+        const providerLabel = isApple ? 'Apple ID' : 'Google';
+        const defaultEmail = isApple ? 'alex.mercer@icloud.com' : 'alex.mercer@gmail.com';
+        const defaultTag = isApple ? 'ALEX_APPLE' : 'ALEX_GOOGLE';
+
+        const accounts = readStorage(STORAGE_KEYS.ACCOUNTS, []);
+        let matched = accounts.find(a => a.email.toLowerCase() === defaultEmail);
+
+        if (!matched) {
+          matched = {
+            id: 'USR-' + (isApple ? 'APL' : 'GGL') + '-' + Math.floor(1000 + Math.random() * 9000),
+            name: 'Alex Mercer',
+            gamerTag: defaultTag,
+            email: defaultEmail,
+            phone: '+1 (555) 014-8890',
+            authHash: hashCredentialDemo('SocialPass2026'),
+            preferredZone: 'vip',
+            memberTier: 'Arena Member',
+            availableHours: 5.0,
+            totalHoursPlayed: 14,
+            completedSessions: 4
+          };
+          accounts.push(matched);
+          writeStorage(STORAGE_KEYS.ACCOUNTS, accounts);
+        }
+
+        setCurrentUser(matched);
+
+        const labelSpan = btn.querySelector('span');
+        if (labelSpan) {
+          labelSpan.textContent = `Connecting to ${providerLabel}...`;
+        }
+        btn.disabled = true;
+        btn.style.opacity = '0.75';
+
+        setTimeout(() => {
+          window.location.href = 'dashboard.html';
+        }, 500);
+      });
+    });
   }
 
   /* ========================================================================
